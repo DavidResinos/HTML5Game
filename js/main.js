@@ -14,7 +14,7 @@ Hero.prototype = Object.create(Phaser.Sprite.prototype);
 Hero.prototype.constructor = Hero;
 
 Hero.prototype.move = function (direction) {
-    const SPEED = 2000;
+    const SPEED = 3000;
     this.body.velocity.x = direction * SPEED;
     if (this.body.velocity.x < 0) {
         this.scale.x = -1;
